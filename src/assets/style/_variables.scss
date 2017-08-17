@@ -104,9 +104,9 @@ $colors: (
 
 $theme-colors: (
   primary: #044169,
-  secondary: $gray-600,
+  secondary: rgba(#044169, 0.75),
   success: $green,
-  info: $cyan,
+  info: #78ccd2,
   warning: $yellow,
   danger: $red,
   light: $gray-100,
