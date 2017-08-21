@@ -6,7 +6,7 @@
 
 				<a class="navbar-brand" href="#">
 					<img src="../assets/logo-white.png" class="">
-					<span class="ml-2 p-1 border">
+					<span class="ml-2 p-1 border border-salmon text-salmon">
 						COIN
 					</span>
 				</a>

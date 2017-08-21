@@ -110,7 +110,8 @@ $theme-colors: (
   warning: $yellow,
   danger: $red,
   light: $gray-100,
-  dark: darken(#044169, 8%)
+  dark: darken(#044169, 8%),
+  salmon: #ff6f59
 ) !default;
 
 // Set a specific jump point for requesting color jumps
