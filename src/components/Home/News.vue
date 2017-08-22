@@ -1,5 +1,5 @@
 <template lang="html">
-	<div class="list-group list-group-flush small">
+	<div class="list-group list-group-flush small" style="max-height: 350px; overflow-y: scroll;">
 		<a href="#" class="list-group-item list-group-item-action p-2">
 			Complete “Bundle of Three” to Get $100 Well4Life Incentive, Health Insights
 			<br>
@@ -20,7 +20,7 @@
 			<br>
 			<em class="text-muted small">{{ new Date }}</em>
 		</a>
-		<a href="#" class="list-group-item list-group-item-action p-2">
+		<a v-for="n in 10" href="#" class="list-group-item list-group-item-action p-2">
 			Complete “Bundle of Three” to Get $100 Well4Life Incentive, Health Insights
 			<br>
 			<em class="text-muted small">{{ new Date }}</em>

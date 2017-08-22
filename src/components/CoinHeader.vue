@@ -1,10 +1,10 @@
 <template>
 	<header class="">
 
-		<nav id="coin-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark mt-0 mb-0">
+		<nav id="coin-navbar" class="navbar navbar-expand-lg navbar-dark bg-primary mt-0 mb-0">
 			<div class="container-fluid">
 
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="./">
 					<img src="../assets/logo-white.png" class="">
 					<span class="ml-2 p-1 border border-salmon text-salmon">
 						COIN
@@ -29,16 +29,19 @@
 									<div class="row">
 										<div class="col-md-8 p-3">
 
-											<h4 class="">Departments</h4>
+											<h4 class="my-3">
+												Departments
+											</h4>
+
 											<div id="departments" class="list-group-flush">
-												<a v-for="dept in departments" href="#" class="list-group-item p-1">
+												<router-link v-for="(dept, index) in departments" :to="{ name: 'Department' }" :key="index" class="list-group-item p-1">
 													{{ dept }}
-												</a>
+												</router-link>
 											</div>
 
 										</div>
 										<div class="col-md-4 bg-light p-3">
-											<h5 class="">Departmental Related Topics...</h5>
+											<h5 class="my-3">Departmental Related Topics...</h5>
 
 											<ul>
 												<li v-for="n in 5">
@@ -80,19 +83,19 @@
 			</div>
 		</nav>
 
-		<form class="bg-light p-1" method="post">
+		<form class="bg-light p-1" method="get" action="./">
 			<div class="input-group input-group-lg ">
-				<input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search For...">
+				<input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search For..." required>
 				<div class="input-group-btn">
-					<button type="button" class="btn btn-light text-dark search-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Search
+					<button type="submit" class="btn btn-salmon text-white">Search</button>
+					<button type="button" class="btn btn-salmon text-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>
 					</button>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
+						<a class="dropdown-item" href="#">Search COIN</a>
+						<a class="dropdown-item" href="#">Search People</a>
 						<div role="separator" class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
+						<a class="dropdown-item" href="#">Something Else</a>
 					</div>
 				</div>
 			</div>
@@ -153,18 +156,27 @@ export default {
 	vertical-align: 2px;
 }
 
-.search-btn {
-	background: $gray-200;
+#coin-navbar {
+	.dropdown-toggle {
+		font-weight: bold;
+		@include media-breakpoint-down(lg) {
+			&:after {
+				display: none;
+			}
+		}
+	}
 }
 
 // dropdowns
 #coin-navbar {
-	.dropdown {
-		position: static;
-	}
-	.dropdown-menu {
-		position: absolute;
-		width: 100%;
+	@include media-breakpoint-up(lg) {
+		.dropdown {
+			position: static;
+		}
+		.dropdown-menu {
+			position: absolute;
+			width: 100%;
+		}
 	}
 }
 
