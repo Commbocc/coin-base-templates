@@ -152,10 +152,10 @@ export default {
 
 #departmentJumbo {
 	background: $gray-200;
-	background-image: url('../../static/bg.png');
-	background: -moz-linear-gradient(left, rgba($gray-200, 0.85) 0%, rgba($gray-200, 0.90) 50%, $gray-200 100%), url('../../static/bg.png');
-	background: -webkit-linear-gradient(left, rgba($gray-200, 0.85) 0%, rgba($gray-200, 0.90) 50%, $gray-200 100%), url('../../static/bg.png');
-	background: linear-gradient(to right, rgba($gray-200, 0.85) 0%, rgba($gray-200, 0.90) 50%, $gray-200 100%), url('../../static/bg.png');
+	background-image: url('../assets/bg.png');
+	background: -moz-linear-gradient(left, rgba($gray-200, 0.85) 0%, rgba($gray-200, 0.90) 50%, $gray-200 100%), url('../assets/bg.png');
+	background: -webkit-linear-gradient(left, rgba($gray-200, 0.85) 0%, rgba($gray-200, 0.90) 50%, $gray-200 100%), url('../assets/bg.png');
+	background: linear-gradient(to right, rgba($gray-200, 0.85) 0%, rgba($gray-200, 0.90) 50%, $gray-200 100%), url('../assets/bg.png');
 
 	-o-background-size: cover;
 	-webkit-background-size: cover;
