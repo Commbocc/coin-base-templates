@@ -148,10 +148,10 @@ export default {
 <style lang="scss">
 #homeJumbo {
 	// background: $gray-200;
-	// background-image: url('http://localhost/bg.png');
-	// background: -moz-linear-gradient(left, rgba($gray-200, 0.90) 0%, rgba($gray-200, 0.95) 50%, $gray-200 100%), url('http://localhost/bg.png');
-	// background: -webkit-linear-gradient(left, rgba($gray-200, 0.90) 0%, rgba($gray-200, 0.95) 50%, $gray-200 100%), url('http://localhost/bg.png');
-	// background: linear-gradient(to right, rgba($gray-200, 0.90) 0%, rgba($gray-200, 0.95) 50%, $gray-200 100%), url('http://localhost/bg.png');
+	// background-image: url('./static/bg.png');
+	// background: -moz-linear-gradient(left, rgba($gray-200, 0.90) 0%, rgba($gray-200, 0.95) 50%, $gray-200 100%), url('./static/bg.png');
+	// background: -webkit-linear-gradient(left, rgba($gray-200, 0.90) 0%, rgba($gray-200, 0.95) 50%, $gray-200 100%), url('./static/bg.png');
+	// background: linear-gradient(to right, rgba($gray-200, 0.90) 0%, rgba($gray-200, 0.95) 50%, $gray-200 100%), url('./static/bg.png');
 	//
 	// -o-background-size: cover;
 	// -webkit-background-size: cover;

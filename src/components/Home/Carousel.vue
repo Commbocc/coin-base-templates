@@ -7,7 +7,7 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="http://localhost:8080/static/well4life.gif" alt="First slide">
+				<img class="d-block w-100" src="../../assets/well4life.gif" alt="First slide">
 			</div>
 			<div class="carousel-item">
 				<img class="d-block w-100" src="https://placehold.it/388x199" alt="Second slide">
