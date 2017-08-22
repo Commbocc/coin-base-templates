@@ -34,7 +34,7 @@
 											</h4>
 
 											<div id="departments" class="list-group-flush">
-												<router-link v-for="dept in departments" :to="{ name: 'Department' }" class="list-group-item p-1">
+												<router-link v-for="(dept, index) in departments" :to="{ name: 'Department' }" :key="index" class="list-group-item p-1">
 													{{ dept }}
 												</router-link>
 											</div>
